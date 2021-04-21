@@ -2,7 +2,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #facace;
+  /* background-color: #facace; */
+  background-color: #ffe6e8;
 }
 
 textarea {
@@ -38,7 +39,8 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #ffe6e8;
   color: #000000;
   border-top: 1px dashed #000000;
 }
