@@ -57,14 +57,27 @@ function saveData(event) {
 
   // write back to local data
   localStorage.setItem("data", JSON.stringify(data));
+
+  //display data in timeblock
+  displayData();
 }
 
+//add eventlistner on save data button
 saveButtonEl.on("click", saveData);
 
-// var data = JSON.parse(localStorage.getItem("data")) || [];
-// if (data.length > 0) {
-//   data.forEach((datum) => {
-//     var query = `[id="${datum.id}"]`; //"[id='" +datum.id+ "']"
-//     $(query).val(datum.text);
-//   });
-// }
+displayData();
+
+//display the content in textarea
+function displayData() {
+  // get data from local storage
+  var data = JSON.parse(localStorage.getItem("data")) || [];
+  //if items is there then display it
+  if (data.length > 0) {
+    // console.log("Inside display");
+    console.log(data);
+    data.forEach((datum) => {
+      var query = `[id="${datum.id}"]`; //"[id='" +datum.id+ "']"
+      $(query).val(datum.text);
+    });
+  }
+}
