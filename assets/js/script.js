@@ -22,8 +22,8 @@ function changeColor() {
   $.each(textboxArray, function (indexNum, value) {
     //console.log($(this).attr("id"));
     var schedulerHour = $(this).attr("id");
-    console.log("schedular time", schedulerHour);
-    console.log("current time", currentTime);
+    // console.log("schedular time", schedulerHour);
+    // console.log("current time", currentTime);
 
     if (currentTime > schedulerHour) {
       //assign class past
@@ -74,7 +74,7 @@ function displayData() {
   //if items is there then display it
   if (data.length > 0) {
     // console.log("Inside display");
-    console.log(data);
+    //console.log(data);
     data.forEach((datum) => {
       var query = `[id="${datum.id}"]`; //"[id='" +datum.id+ "']"
       $(query).val(datum.text);
