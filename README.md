@@ -20,4 +20,4 @@ This calendar application that allows a user to save events for each hour of the
 
 ## Deployed Application
 
-[Work-Day-Scheduler](https://gunjanb.github.io/Code-Quiz/)
+[Work-Day-Scheduler](https://gunjanb.github.io/Work-Day-Scheduler/)
